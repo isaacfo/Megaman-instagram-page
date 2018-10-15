@@ -2,7 +2,8 @@
 
 /* apply a natural box layout model to all elements, but allowing components to change */
 html {
-  box-sizing: border-box;
+    box-sizing: border-box;
+    background-color: wheat;
 }
 *, *:before, *:after {
   box-sizing: inherit;
@@ -11,20 +12,28 @@ html {
 
 
 
-
 html, body {
     margin: 0;
     padding: 0;
     height: 100%;
-    width: 100%;
+    width: 100%;\
+    
+
 
 }
+
+
+
+
+
+
+
 
 /*picture frame technique to resize images */
 .thumbnail-item {
      /* controls the size of the image */ 
-    width: 120px;
-    height: 120px;
+    width: 220px;
+    height: 220px;
     margin-bottom: 20px;
     text-align: center;
 }
@@ -46,5 +55,15 @@ html, body {
 }
 
 
+.picture-frame {
+    width: 90%;
+    margin: 0 auto;
+    text-align: center;
+    /* outline: 1px solid red; */
+}
 
+.picture-frame > img {
+    max-width: 100%;
+    max-height: 100%;
 
+}
