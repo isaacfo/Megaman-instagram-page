@@ -17,7 +17,7 @@ function makeImages(arr) {
     arr.forEach(function(element) {
         target.appendChild(createThumbnail(element));
     });
-}
+};
 makeImages(Images);
 // function that generates an img element
 
@@ -30,7 +30,14 @@ function createImage(imageURL) {
     theImage.addEventListener('click', function(event) {
      const clickPic = document.querySelector("[data-output]");
      clickPic.setAttribute('src',event.target.src);
-    //  theImage.setAttribute('class', )   
+     modalElement.classList.toggle('modal-hidden');
+     clickPic.addEventListener('click', function(){
+         modalElement.classList.add('modal-hidden');
+
+     })
+
+      
+    
     });
     
     return theImage;
@@ -44,4 +51,20 @@ function createThumbnail(imageURL) {
     theContainer.appendChild(createImage(imageURL));
 
     return theContainer;
-}
+};
+
+
+const modalElement = document.querySelector('[data-modal]');
+
+
+window.addEventListener('keydown', function (event) {
+    // console.log('you pressed a key');
+    // console.log(event);
+    // Key: "Escape"
+    // Keycode: 27
+    if (event.keyCode === 27) {
+        console.log('I want to hide the modal!');
+        modalElement.classList.add('modal-hidden');
+    }
+});
+

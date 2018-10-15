@@ -84,8 +84,14 @@ html, body {
     
 }
 
-.litte-button {
+.little-button {
     background-color: #3897f0;
+    color: white;
+    font-size: 15px;
+    border-radius: 5px;
+    padding:8px;
+    width: 40px;
+
 }
 
 /*picture frame technique to resize images */
@@ -126,3 +132,36 @@ html, body {
     max-height: 100%;
 
 }
+
+
+.modal {
+    position: absolute;
+    left: 0;
+    top: 0;
+
+    width: 100%;
+    height: 100%;
+    
+    background-color: rgba(0,0,0,0.7);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: all 200ms ease-in-out;
+
+}
+
+
+.modal-hidden {
+    /* display: none; */
+    transform: scale(0.00001);
+}
+
+.info {
+    display: flex;
+    flex-direction: column;
+    
+}
+/* .page-info {
+    color
+} */
+
