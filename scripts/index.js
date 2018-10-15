@@ -31,7 +31,7 @@ function createImage(imageURL) {
      const clickPic = document.querySelector("[data-output]");
      clickPic.setAttribute('src',event.target.src);
     //  theImage.setAttribute('class', )   
-    })
+    });
     
     return theImage;
 

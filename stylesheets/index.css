@@ -3,7 +3,7 @@
 /* apply a natural box layout model to all elements, but allowing components to change */
 html {
     box-sizing: border-box;
-    background-color: wheat;
+    background-color:;
 }
 *, *:before, *:after {
   box-sizing: inherit;
@@ -22,12 +22,71 @@ html, body {
 
 }
 
+.nav-header{
+    display: flex;
+    justify-content: space-around; 
+    align-items: center;
+    padding: 20px 25px;
+    /* height:200px; */
+    border-bottom: 1px solid darkgray;
+    border-top: 1px solid darkgray; 
+    
+}
 
+.logo-image {
+    width: 180px;
+}
 
+.search-button form input {
+    padding: 5px;
+    border: 1px solid darkgray;
+    border-radius: 5px;
+    text-align: center;
+}
 
+.log-in-but {
+    background-color:#3897f0;
+    color: white;
+    border-radius:5px;
+    font-size: 15px;
+    padding: 8px;
 
+}
 
+.sign-up {
+    font-size: 18px;
+    color: #3897f0;
+    text-decoration: none;
+    margin-left: 15px;
+}
 
+.sub-header {
+    margin: 16px 30px 16px 24px;
+    display: flex;
+    justify-content: space-around; 
+    align-items: center;
+}
+
+.sub-headerpic img{
+    border-radius: 50%;
+    width: 80px;
+    
+}
+
+.follow-butt {
+    background-color: #3897f0;
+    color: white;
+    border-radius: 5px;
+    font-size: 15px;
+    padding: 8px;
+    width: 400px;
+    text-align: center;
+    
+}
+
+.litte-button {
+    background-color: #3897f0;
+}
 
 /*picture frame technique to resize images */
 .thumbnail-item {
