@@ -98,7 +98,7 @@ html, body {
 .thumbnail-item {
      /* controls the size of the image */ 
     width: 220px;
-    height: 220px;
+    height: 300px;
     margin-bottom: 20px;
     text-align: center;
 }
@@ -161,7 +161,21 @@ html, body {
     flex-direction: column;
     
 }
+
 /* .page-info {
-    color
+
 } */
 
+.follower-stats {
+    height: 61px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.follower-stats li {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+}

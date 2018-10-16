@@ -2,13 +2,44 @@
 
 const Images = [
     "images/OGmegaman.png",
-    "images/MegamanXreg.png",
+    "images/MegamanXB.png",
     "images/MegamanVolnutt.png",
     "images/XCM.png",
     "images/EXE.png",
     "images/MegamanStarForce.png"
     
 ];
+
+// Array "navigation" functions
+
+function getNextImage(currentURL) {
+// find the current URL's index in the Images array
+    let index = Images.indexOf(currentURL);
+// Increment the index
+    index++;
+// check if it's within bounds, reset if necessary
+    if(index === Images.length) {
+        index = 0;
+    }
+// then return the image URL at the new index
+return Images[index];
+};
+
+
+
+function getPrevImage(currentURL) {
+    // find the current URL's index in the Images array
+    let index = Images.indexOf(currentURL);
+// Decrement the index
+    index--;
+// check if it's within bounds, reset if necessary
+    if(index < 0) {
+        index = Images.length - 1;
+    }
+// then return the image URL at the new index
+return Images[index];
+
+}
 
 // Function that generaters the thumbnail div
 
@@ -68,3 +99,24 @@ window.addEventListener('keydown', function (event) {
     }
 });
 
+
+// add global previous/next keyboard listeners
+const outputElement = document.querySelector("[data-output]")
+window.addEventListener('keydown', function(event) {
+    // console.log(event.keyCode);
+    if (event.keyCode === 37) {
+        console.log('go to previous image');
+        let curr = outputElement.getAttribute('src');
+        let prev = getPrevImage(curr);
+        outputElement.setAttribute('src', prev);
+    } else if (event.keyCode === 39) {
+        console.log('go to the next image');
+        let curr = outputElement.getAttribute('src');
+        let next = getNextImage(curr);
+        outputElement.setAttribute('src', next);
+    }
+});
+
+
+
+main();
