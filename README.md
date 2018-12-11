@@ -7,4 +7,4 @@ I love the Megaman series and I decided to create a clone of an instagram page f
 Uses basic JavaScrpit that I had learned up to that point in class. 
 
 
-Main takaway: Learned DOM manipulation with eventhadelers/listeners and praciticed styling with CSS.
+Main takaway: Learned DOM manipulation with event handelers/listeners and praciticed styling with CSS.
