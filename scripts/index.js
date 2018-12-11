@@ -1,7 +1,7 @@
 // Instaclone
 
 const Images = [
-    "images/OGmegaman.png",
+    "images/MegamanMVC.png",
     "images/MegamanXB.png",
     "images/MegamanVolnutt.png",
     "images/XCM.png",
@@ -9,6 +9,15 @@ const Images = [
     "images/MegamanStarForce.png"
     
 ];
+
+function getCurrentIndex(currentURL) {
+    let index = Images.mapfunction (i)
+}
+
+
+    let index = Images.map(i => i.url).index
+
+
 
 // Array "navigation" functions
 
@@ -88,7 +97,7 @@ function createThumbnail(imageURL) {
 const modalElement = document.querySelector('[data-modal]');
 
 
-window.addEventListener('keydown', function (event) {
+window.addEventListener('keydown', function (event) { 
     // console.log('you pressed a key');
     // console.log(event);
     // Key: "Escape"
