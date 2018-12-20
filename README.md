@@ -1,5 +1,5 @@
 # Megaman-instagram-page
-Instagram page for Megaman varations!
+Instagram page for Megaman variations!
 
 
 I love the Megaman series and I decided to create a clone of an instagram page featuring Megaman for one of my in class projects in DigitalCrafts.
