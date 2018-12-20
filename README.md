@@ -10,6 +10,6 @@ Uses basic JavaScript that I had learned up to that point in class.
 Main takaway: Learned DOM manipulation with event handlers/listeners and practiced styling with CSS.
 
 
-#Future Plans
+# Future Plans
 - make the page responsive
 - fix image size when displayed by modal
