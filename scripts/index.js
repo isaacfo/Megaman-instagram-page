@@ -128,4 +128,3 @@ window.addEventListener('keydown', function(event) {
 
 
 
-main();

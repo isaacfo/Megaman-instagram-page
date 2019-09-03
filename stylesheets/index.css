@@ -3,7 +3,7 @@
 /* apply a natural box layout model to all elements, but allowing components to change */
 html {
     box-sizing: border-box;
-    background-color:;
+    
 }
 *, *:before, *:after {
   box-sizing: inherit;
@@ -16,7 +16,7 @@ html, body {
     margin: 0;
     padding: 0;
     height: 100%;
-    width: 100%;\
+    width: 100%;
     
 
 
@@ -37,6 +37,12 @@ html, body {
     width: 180px;
 }
 
+@media (max-width:450px) {
+    .logo-image {
+        width: 130px;
+    }
+}
+
 .search-button form input {
     padding: 5px;
     border: 1px solid darkgray;
@@ -50,7 +56,12 @@ html, body {
     border-radius:5px;
     font-size: 15px;
     padding: 8px;
+}
 
+@media (max-width:450px) {
+    .log-in-but {
+    padding:2px
+    }
 }
 
 .sign-up {
@@ -81,7 +92,12 @@ html, body {
     padding: 8px;
     width: 400px;
     text-align: center;
-    
+   
+}
+@media (max-width:450px) {
+    .follow-butt {
+        width: 100px;
+    }
 }
 
 .little-button {
